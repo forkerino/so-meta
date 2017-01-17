@@ -1,8 +1,0 @@
-Options +FollowSymLinks
-
-RewriteEngine on
-
-RewriteRule !^drupal(/.*)?$ /drupal%{REQUEST_URI} [QSA,L]
-
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteRule ^drupal(/(.*))?$ /$2 [R=301,L]
